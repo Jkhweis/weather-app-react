@@ -1,0 +1,31 @@
+h1 {
+  position: relative;
+  font-family: Alata;
+  font-size: 50px;
+  margin-top: -18px;
+  margin-left: 30px;
+  color: #9fe6e6;
+}
+ul {
+  position: relative;
+  columns: 2;
+  font-family: Alata;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+  color: #3bd5f0;
+  margin-top: -10px;
+  margin-left: 30px;
+  list-style: none;
+}
+.todayTemp {
+  font-size: 60px;
+  color: #9fe6e6;
+}
+.Link .active {
+  color: black;
+  cursor: default;
+}
+.Link .active:hover {
+  text-decoration: none;
+}
