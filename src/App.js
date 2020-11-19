@@ -17,12 +17,7 @@ export default function App() {
             placeholder="Enter city"
           />
         </div>
-        <input
-          type="submit"
-          class="btn btn-info"
-          id="city-button"
-          value="Search"
-        />
+        <input type="button" id="city-button" value="Search" />
       </form>
       <ul>
         <li class id="todaysDate"></li>
@@ -41,13 +36,10 @@ export default function App() {
 
           <span className="todayTemp" id="todayTemp"></span>
           <span className="units">
-            <a href="#" id="celcius-link" className="active">
+            <span id="celcius-link" className="active">
               ° C{" "}
-            </a>
-            |
-            <a href="#" id="fahrenheit-link">
-              °F
-            </a>
+            </span>
+            |<span id="fahrenheit-link">°F</span>
           </span>
           <br />
           <br />
