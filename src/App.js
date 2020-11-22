@@ -1,56 +1,20 @@
 import "./App.css";
+import CurrentWeather from "./CurrentWeather";
 import "./CurrentWeather.css";
+import "bootstrap/dist/css/bootstrap.css";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function App() {
   return (
     <div className="App">
-      <form class="form-inline">
-        <div class="form-group mb-2"></div>
-        <div class="form-group mx-sm-4 mb-6">
-          <label for="inputPassword2" class="sr-only">
-            Enter city
-          </label>
-          <input
-            type="search"
-            class="form-control"
-            id="inputPassword2"
-            placeholder="Enter city"
-          />
-        </div>
-        <input type="button" id="city-button" value="Search" />
-      </form>
-      <ul>
-        <li class id="todaysDate"></li>
-        <li class id="todaysCondition"></li>
-        <li>
-          Humidity: <span id="humidityData"></span>%
-        </li>
-        <li>
-          Wind: <span id="windData"></span> km/hr
-        </li>
-      </ul>
-      <div className="row" />
-      <div className="col-8">
-        <div className="weather-temperature">
-          <img src="" alt="clear" id="todayIcon" className="float-left" />
-
-          <span className="todayTemp" id="todayTemp"></span>
-          <span className="units">
-            <span id="celcius-link" className="active">
-              ° C{" "}
-            </span>
-            |<span id="fahrenheit-link">°F</span>
-          </span>
-          <br />
-          <br />
-
-          <footer>
-            <a href="https://github.com/Jkhweis/weather-app" target="blank">
-              Open Source Code Test
-            </a>
-            by Joy Khweis
-          </footer>
-        </div>
+      <div className="container">
+        <CurrentWeather />
+        <footer>
+          <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
+            Open Source Code
+          </a>
+          by Joy Khweis
+        </footer>
       </div>
     </div>
   );

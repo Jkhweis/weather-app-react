@@ -1,15 +1,12 @@
-body {
-  background-image: url("https://images.pexels.com/photos/1858161/pexels-photo-1858161.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-}
 .App {
   font-family: sans-serif;
   text-align: center;
-  border: 2px solid #65bcdf;
+  border: 2px solid #bbe4f5;
   padding: 20px;
   margin: 70px 145px;
   border-radius: 20px;
   max-width: 80%;
-  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-image: linear-gradient(15deg, #84c2e6 0%, #80d0c7 100%);
 }
 .float-right {
   width: 200px;
