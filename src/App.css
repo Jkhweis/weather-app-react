@@ -2,11 +2,11 @@
   font-family: sans-serif;
   text-align: center;
   border: 2px solid #bbe4f5;
-  padding: 20px;
-  margin: 70px 145px;
+  padding: 25px;
+  margin: 70px 130px;
   border-radius: 20px;
-  max-width: 80%;
-  background-image: linear-gradient(15deg, #84c2e6 0%, #80d0c7 100%);
+  max-width: 60%;
+  background-image: linear-gradient(15deg, #0c97ce 0%, #80d0c7 100%);
 }
 .float-right {
   width: 200px;

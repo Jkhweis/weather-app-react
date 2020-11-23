@@ -1,16 +1,16 @@
 h1 {
   position: relative;
-  font-family: Alata;
   font-size: 50px;
+  font-family: Alata;
   color: #f5ea4c;
 }
 ul {
   position: relative;
-  font-family: Alata;
   margin: 0;
   padding: 5px;
-  font-size: 20px;
-  color: #7a9c2b;
+  font-size: 19px;
+  font-family: Alata;
+  color: #211b41;
   list-style: none;
 }
 .todayTemp {
