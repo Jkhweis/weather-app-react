@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import "./CurrentWeather.css";
 import Axios from "axios";
+import FormatDate from "./FormatDate";
 
-export default function CurrentWeather() {
+export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function showTemperature(response) {
     setWeatherData({
       ready: true,
       city: response.data.name,
-      temperature: response.data.main.temp,
+      date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
+      temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
     });
@@ -44,7 +46,9 @@ export default function CurrentWeather() {
         <div className="row" />
         <div className="col-6">
           <ul>
-            <li>Wednesday 07:00</li>
+            <li>
+              <FormatDate date={weatherData.date} />
+            </li>
             <li className="text-capitalize">{weatherData.description}</li>
           </ul>
         </div>
@@ -72,8 +76,7 @@ export default function CurrentWeather() {
     );
   } else {
     const apiKey = "28f52080b9de7ad64256839acc8afe17";
-    let city = "London";
-    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
     Axios.get(url).then(showTemperature);
 
     return "Loading";
