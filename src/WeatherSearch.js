@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherSearch(props) {
   return (
@@ -13,6 +14,15 @@ export default function WeatherSearch(props) {
           </li>
           <li className="text-capitalize">{props.data.description}</li>
         </ul>
+      </div>
+      <div className="row mt-3">
+        <div className="col-6">
+          <div ClassName="clearfix">
+            <div className="float-left">
+              <WeatherIcon code={props.data.icon} />
+            </div>
+          </div>
+        </div>
       </div>
       <div className="col-6">
         <ul>

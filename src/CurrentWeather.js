@@ -13,6 +13,7 @@ export default function CurrentWeather(props) {
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       wind: response.data.wind.speed,
@@ -37,22 +38,20 @@ export default function CurrentWeather(props) {
   if (weatherData.ready) {
     return (
       <div className="Weather">
-        <form onSubmit={handleSubmit}>
-          <form className="form-inline">
-            <div class="form-group mb-2"></div>
-            <div class="form-group mx-sm-4 mb-6">
-              <label for="inputPassword2" class="sr-only">
-                Enter city
-              </label>
-              <input
-                type="search"
-                className="form-control"
-                placeholder="Enter city"
-                onChange={handleCityChange}
-              />
-            </div>
-            <input type="submit" className="btn btn-info" value="Search" />
-          </form>
+        <form onSubmit={handleSubmit} className="form-inline">
+          <div class="form-group mb-2"></div>
+          <div class="form-group mx-sm-4 mb-6">
+            <label for="inputPassword2" class="sr-only">
+              Enter city
+            </label>
+            <input
+              type="search"
+              className="form-control"
+              placeholder="Enter city"
+              onChange={handleCityChange}
+            />
+          </div>
+          <input type="submit" className="btn btn-info" value="Search" />
         </form>
         <WeatherSearch data={weatherData} />
       </div>
