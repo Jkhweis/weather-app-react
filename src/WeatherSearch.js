@@ -1,6 +1,7 @@
 import React from "react";
 import FormatDate from "./FormatDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherSearch(props) {
   return (
@@ -22,6 +23,9 @@ export default function WeatherSearch(props) {
               <WeatherIcon code={props.data.icon} />
             </div>
           </div>
+          <div className="float-left">
+            <WeatherTemperature celsius={props.data.temperature} />
+          </div>
         </div>
       </div>
       <div className="col-6">
@@ -29,18 +33,6 @@ export default function WeatherSearch(props) {
           <li>Humidity: {props.data.humidity} %</li>
           <li>Wind: {props.data.wind} km/hr</li>
         </ul>
-      </div>
-      <div className="row" />
-      <div className="col-8">
-        <span className="todayTemp">{Math.round(props.data.temperature)}</span>
-        <span className="units">
-          <span id="celcius-link" className="active">
-            ° C{" "}
-          </span>
-          |<span id="fahrenheit-link">°F</span>
-        </span>
-        <br />
-        <br />
       </div>
     </div>
   );
