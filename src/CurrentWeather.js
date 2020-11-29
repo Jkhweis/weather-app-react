@@ -3,6 +3,7 @@ import "./CurrentWeather.css";
 import Axios from "axios";
 import WeatherSearch from "./WeatherSearch";
 import WeatherForecast from "./WeatherForecast";
+import Loader from "react-loader-spinner";
 
 export default function CurrentWeather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -62,6 +63,14 @@ export default function CurrentWeather(props) {
     );
   } else {
     search();
-    return "Loading";
+    return (
+      <Loader
+        type="Rings"
+        color="#2a5974"
+        height={90}
+        width={90}
+        timeout={3000}
+      />
+    );
   }
 }

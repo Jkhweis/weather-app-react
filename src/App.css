@@ -8,3 +8,7 @@
   display: block;
   background-image: linear-gradient(30deg, #158bc2 0%, #91fff2 100%);
 }
+
+footer {
+  color: #fffffd;
+}
