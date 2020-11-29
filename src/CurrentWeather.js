@@ -38,23 +38,25 @@ export default function CurrentWeather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div className="CurrentWeather">
         <form onSubmit={handleSubmit} className="form-inline">
-          <div class="form-group mb-2"></div>
-          <div class="form-group mx-sm-4 mb-6">
+          <div className="form-group mb-2"></div>
+          <div className="form-group mx-sm-4 mb-6">
             <label for="inputPassword2" class="sr-only">
               Enter city
             </label>
             <input
               type="search"
               className="form-control"
-              placeholder="Enter city"
+              placeholder="Enter a city..."
               onChange={handleCityChange}
             />
           </div>
           <input type="submit" className="btn btn-info" value="Search" />
         </form>
+        <br />
         <WeatherSearch data={weatherData} />
+        <br />
         <WeatherForecast city={weatherData.city} />
       </div>
     );

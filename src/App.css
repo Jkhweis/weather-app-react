@@ -1,13 +1,10 @@
 .App {
-  font-family: sans-serif;
+  font-family: Alata;
   text-align: center;
-  border: 2px solid #bbe4f5;
-  padding: 25px;
-  margin: 70px 130px;
+  border: 3px solid #4b97a5;
   border-radius: 20px;
-  max-width: 60%;
-  background-image: linear-gradient(15deg, #0c97ce 0%, #80d0c7 100%);
-}
-.float-right {
-  width: 200px;
+  padding: 25px;
+  margin: 75px 110px;
+  display: block;
+  background-image: linear-gradient(30deg, #158bc2 0%, #91fff2 100%);
 }

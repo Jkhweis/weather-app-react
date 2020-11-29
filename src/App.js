@@ -10,13 +10,13 @@ export default function App() {
       <div className="container">
         <CurrentWeather defaultCity="London" />
         <br />
-        <footer>
-          <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
-            Open Source Code
-          </a>
-          by Joy Khweis
-        </footer>
       </div>
+      <footer>
+        <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
+          Open Source Code{" "}
+        </a>
+        by Joy Khweis
+      </footer>
     </div>
   );
 }

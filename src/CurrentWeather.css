@@ -1,19 +1,50 @@
-h1 {
+.CurrentWeather h1 {
+  margin-left: 175px;
   position: relative;
-  font-size: 50px;
-  font-family: Alata;
-  color: #f5ea4c;
-}
-ul {
-  position: relative;
-  margin: 0;
-  padding: 5px;
-  font-size: 19px;
-  font-family: Alata;
-  color: #211b41;
-  list-style: none;
-}
-.todayTemp {
   font-size: 60px;
-  color: #9fe6e6;
+  color: #515855c9;
+}
+
+.CurrentWeather h2 {
+  top: -57px;
+  float: right;
+  position: relative;
+  font-size: 26px;
+  color: #2a5974;
+}
+
+.CurrentWeather h3 {
+  margin-left: 20px;
+  position: relative;
+  font-size: 23px;
+  color: #515855;
+}
+
+.CurrentWeather canvas {
+  margin: 10px auto;
+}
+
+.CurrentWeather .temperature {
+  position: relative;
+  font-weight: bold;
+  color: #212121;
+  font-size: 57px;
+  line-height: 64px;
+  margin-left: 30px;
+}
+
+.CurrentWeather .unit {
+  color: #212121;
+  font-size: 13px;
+  position: relative;
+  line-height: 1;
+  top: -34px;
+}
+
+.CurrentWeather .HumidityWind {
+  margin-right: -190px;
+  color: #fffffd;
+  padding-top: 30px;
+  font-size: 17px;
+  list-style: none;
 }
