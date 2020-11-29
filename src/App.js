@@ -9,6 +9,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <CurrentWeather defaultCity="London" />
+        <br />
         <footer>
           <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
             Open Source Code
