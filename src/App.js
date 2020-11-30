@@ -11,7 +11,7 @@ export default function App() {
         <CurrentWeather defaultCity="Chicago" />
       </div>
       <footer>
-        Created by
+        Coded by
         <a
           href="https://www.linkedin.com/in/joy-khweis-bb91b0198/"
           target="blank"
