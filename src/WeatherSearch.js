@@ -7,12 +7,12 @@ import "./CurrentWeather.css";
 export default function WeatherSearch(props) {
   return (
     <div classname="WeatherSearch">
+      <h1>{props.data.city}</h1>
       <h2>
         <FormatDate date={props.data.date} />{" "}
       </h2>
-      <h1>{props.data.city}</h1>
       <h3 className="text-capitalize">{props.data.description}</h3>
-      <div className="row mt-3">
+      <div className="row mt-2">
         <div className="col-12">
           <WeatherIcon code={props.data.icon} />
           <WeatherTemperature celsius={props.data.temperature} />

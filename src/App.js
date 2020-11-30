@@ -6,16 +6,24 @@ import ReactAnimatedWeather from "react-animated-weather";
 
 export default function App() {
   return (
-    <div className="App">
-      <div className="container">
+    <div className="container">
+      <div className="App">
         <CurrentWeather defaultCity="Chicago" />
-        <br />
       </div>
       <footer>
-        <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
-          Open Source Code{" "}
+        Created by
+        <a
+          href="https://www.linkedin.com/in/joy-khweis-bb91b0198/"
+          target="blank"
+        >
+          {" "}
+          Joy Khweis{" "}
         </a>
-        by Joy Khweis
+        and open-sourced on
+        <a href="https://github.com/Jkhweis/weather-app-react" target="blank">
+          {" "}
+          Github{" "}
+        </a>
       </footer>
     </div>
   );

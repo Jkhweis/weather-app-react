@@ -67,8 +67,8 @@ export default function CurrentWeather(props) {
       <Loader
         type="Rings"
         color="#2a5974"
-        height={90}
-        width={90}
+        height={100}
+        width={100}
         timeout={3000}
       />
     );

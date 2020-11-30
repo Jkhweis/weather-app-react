@@ -1,12 +1,11 @@
 .WeatherForecast {
   text-align: center;
-  margin: 10px 0;
-  background-image: linear-gradient(30deg, #e0e9ee67 0%, #91fff28f 100%);
+  margin: 1px 0;
+  background-image: linear-gradient(15deg, #e0e9ee67 0%, #91fff28f 100%);
   border-radius: 18px;
   padding: 16px;
 }
 
 .WeatherForecast canvas {
   display: block;
-  margin: 5px 40px;
 }
