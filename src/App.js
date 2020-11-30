@@ -2,7 +2,6 @@ import "./App.css";
 import CurrentWeather from "./CurrentWeather";
 import "./CurrentWeather.css";
 import "bootstrap/dist/css/bootstrap.css";
-import ReactAnimatedWeather from "react-animated-weather";
 
 export default function App() {
   return (
