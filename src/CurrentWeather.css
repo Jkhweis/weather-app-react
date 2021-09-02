@@ -56,13 +56,22 @@
 }
 
 .CurrentWeather .HumidityWind {
-  margin: 0px 10px 10px 160px;
   text-align: center;
   padding-top: 9px;
   list-style: none;
-  font-size: 14px;
+  font-size: 16px;
   color: #fffffd;
 }
+
 .CurrentWeather .mt-2 {
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .CurrentWeather .btn {
+    margin: 0 0 0 60px;
+  }
+  .CurrentWeather .HumidityWind {
+    text-align: center;
+  }
 }

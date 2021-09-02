@@ -19,9 +19,10 @@ export default function WeatherSearch(props) {
         </div>
       </div>
       <div>
-        <div className="col-8">
+        <div className="col-11">
           <ul className="HumidityWind">
             <li>Humidity: {props.data.humidity}%</li>
+            <br />
             <li>Wind: {props.data.wind} km/hr</li>
           </ul>
         </div>

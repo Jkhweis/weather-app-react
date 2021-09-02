@@ -42,7 +42,7 @@ export default function CurrentWeather(props) {
       <div className="CurrentWeather">
         <form onSubmit={handleSubmit} className="form-inline">
           <div className="form-group mb-2"></div>
-          <div className="form-group mx-sm-4 mb-6">
+          <div className="form-group mx-sm-4">
             <label for="inputPassword2" class="sr-only">
               Enter city
             </label>

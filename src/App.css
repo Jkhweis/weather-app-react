@@ -9,3 +9,9 @@ footer {
   font-family: Alata;
   color: #1f1f06;
 }
+
+@media (max-width: 600) {
+  .App {
+    max-width: 400px;
+  }
+}
